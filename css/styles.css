@@ -1,0 +1,24 @@
+*{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+header{
+    padding-top: 50px;
+    height:200px;
+}
+
+.Discount Code{
+   width: 100%;
+   background-color: #F7F0F5;
+   height: 50px
+}
+.Discount Code > span{
+    align-items: center;
+}
+
