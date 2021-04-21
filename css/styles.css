@@ -21,6 +21,12 @@
     justify-content: space-between;
 }
 
+body {
+    background-image: url("img/pexels-polina-tankilevitch-4443508.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .Slogan{
     margin: 10px auto;
     font-size: 10px;
@@ -34,6 +40,25 @@
  top: 8px;
 left: 16px;
 }
+
+.LogoMobile{
+    position: absolute;
+     top: 8px;
+    left: 16px;
+    display: none;
+    }
+    
+.mobileNavBTN{ 
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    margin-top:5px;
+    font-size:30px; 
+    display: none; 
+}
+    
+    
+
 
 .IconBar{
     list-style: none;
@@ -56,13 +81,6 @@ left: 16px;
     
   
 }
- /*.mobileNavBTN{ 
-    font-size: 30px;
-    padding: 5px;
-    margin-left: 70px; */
-
-
-
 .menu{
     list-style: none;
     display: flex;
@@ -85,7 +103,7 @@ h2{
     list-style: none;
     display: flex;
     flex-direction: row;
-    font-size: 30px;
+    font-size: 3px;
 }
 
 .SocialMediaLinks > li{
@@ -93,13 +111,15 @@ h2{
 }
 
 .SocialMediaLinks > li > a{
-    color:#fff;
+    color:black;
     text-decoration: none;
+    
 }
 
 .SocialMediaLinks > li > a > i{
-    color:#fff;
+    color:black;
     text-decoration: none;
+    
 }
 
 #banner > img{
@@ -133,7 +153,7 @@ h2{
 
 .mainIMG{
     width: 10px;
-    height: 100x;
+    height: 100px;
 }
 
 .mainText{
@@ -157,6 +177,27 @@ h2{
     height:400px;
     margin-top: 50px;
 }
+.Awards{
+    position: absolute;
+    left: 30px;
+    margin-top: 80px; 
+}
+.AwardsMobile{
+  margin-top: 30px;
+  margin-right:250px;
+  display:none;
+}
+.ReviewDescription{
+    margin-top: -200px;
+    margin-left: 400px;
+}
+.ReviewList{
+    list-style: none;
+    position: absolute;
+    right: 95px;
+    margin-top: 40px;
+    font-size: 15px;
+}
 .PreFooter{
     width: 100%;
     background-color: #D7DEDC;
@@ -166,6 +207,15 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.Follow{
+    height: 150px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 17px;
 }
 h3{
     position: absolute;
@@ -207,9 +257,6 @@ h4{
 }
    
      
-    
-
-
 footer{
     width: 100%;
     background-color:#A9D3FF;
@@ -221,10 +268,8 @@ footer{
 }
 
 footer > span{
-    color: black;
-    font-size: 20px;
+    font-size: 10px;
 }
-
 
 
 
@@ -261,6 +306,12 @@ footer > span{
     footer > span{
         font-size: 12px;
     }
+    .ReviewDescription{
+        margin-top: -200px;
+        margin-left: 400px;
+        display: none;
+    }
+    
 
 }
 
@@ -274,34 +325,254 @@ footer > span{
         flex-direction: column-reverse;
     }
 
-
-
+    .ReviewDescription{
+        margin-top: -200px;
+        margin-left: 400px;
+    }
+    
+    
+ 
     
 
 @media only screen and (max-width: 420px) {
-    
-    footer{
-        padding-bottom: 25px;
-        height: auto;
+
+.container{
+    width: 100%;
+    max-width: 420px;
+    margin: auto; 
+}
+body {
+    background-image: url("img/pexels-polina-tankilevitch-4443508.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     }
-    .SocialMediaLinks > li > a > i{
-        font-size:50px;
-    }
-    .menu{
-            display: block;
-            position: absolute;
-            top:90px;
-            left:0;
-            width:100%;
-            background-color: rgba(255,255,255,0.9)
-        }
-    .hide{
-            display: none;
-        }
-    .menu > li{
-           text-align:center;
+}
+
+.Slogan{
+    margin: 10px auto;
+    font-size: 6px;
+    border: black;
+    border-style: solid;
+
+}
+
+#Logo{
+ position: absolute;
+ top: 8px;
+ left: 16px;
+ display: none;
+}
+
+.LogoMobile{
+    position: absolute;
+     top: 8px;
+    left: 16px;
+    display: flex;
+}
+
+.mobileNavBTN{ 
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    margin-top:5px;
+    font-size:30px; 
+    display: flex; 
+ }
+
+
+.IconBar{
+    list-style: none;
+    display: none;
+    flex-direction: row;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 20px;    
+  
+}
+
+.menu{
+    display: block;
+    position: absolute;
+    top:90px;
+    left:0;
+    width:100%;
+    background-color: rgba(255,255,255,0.9)
+        
+}
+
+.hide{
+    display: none;
+}
+
+
+.menu > li{
+    text-align:center;
            border-bottom: 1px solid #ccc;
            padding: 25px 0px;
-        }
 }
+h2{
+    border: black;
+    border-style: solid;
+    font-size:10px;  
+}
+
+#banner > img{
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.mainText{
+    padding: 30px 30px;
+    font-size: 13px;
+    background-color: white;
+    text-align: center;
+ 
+}
+
+.mainIMG{
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.SocialMedia{
+    font-size:12px;
+    background: #FFEBF9;
+    width:100%;
+    height:400px;
+    margin-top: 50px;
+    margin-bottom:0px;
+}
+
+.Reviews{
+    background: wheat;
+    width:100%;
+    height:400px;
+    margin-top: 0px;
+    text-align: center;
+    font-size:20px
+}
+.Awards{
+    position: absolute;
+    left: 30px;
+    margin-top: 80px; 
+    display: none;
+}
+.AwardsMobile{
+    position: absolute;
+    left: -20px;
+    margin-top: 80px;
+    display: flex;
+}
+    
+.ReviewList{
+    list-style: none;
+    position: absolute;
+    right: 10px;
+    margin-top: 60px;
+    font-size: 8px;
+}
+.ReviewDescription{
+    margin-top: -200px;
+    margin-left: 400px;
+}
+
+
+
+
+
+.PreFooter{
+    width: 100%;
+    background-color: #D7DEDC;
+    height: 180px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Follow{
+    height: 150px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10px;
+    
+}
+.SocialMediaLinks{
+    margin-bottom: 90px;
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 3px;
+}
+
+.SocialMediaLinks > li{
+    padding: 6px 10px;
+}
+
+
+h3{
+    position: absolute;
+    left: 320px;
+    font-size: 20px;
+}
+h4{
+    position: absolute;
+    right: 300px;
+    font-size: 20px;
+}
+
+.MenuList{
+    list-style:circle;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 315px;
+    margin-top: 40px;
+    font-size:15px
+}
+
+.ContactSub{
+    position: absolute;
+    right: 250px;
+    margin-top: 20px;
+    font-size: 8px
+}
+    
+.ContactList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 335px;
+    margin-top: 60px;
+    font-size:8px
+
+}
+
+
+    
+}
+.split5050{
+            flex-direction: column-reverse;
+        }
+    
+    .SocialMediaLinks > li > a > i{
+        font-size:30px;
+    }
+    
+
+footer > span{
+    font-size: 15px;
+}
+
+footer{
+    padding-bottom: 25px;
+    height: auto;
 }
