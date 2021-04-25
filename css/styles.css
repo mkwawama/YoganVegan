@@ -1,6 +1,6 @@
 *{
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    color: black;  /*  Set Global text for Homepage*/
+    font-family: Arial, Helvetica, sans-serif;   /* Set Font for Homepage */
     margin: 0;
     padding: 0;
     border: 0;
@@ -9,104 +9,137 @@
 
 .container{
     width: 100%;
-    max-width: 1300px;
+    max-width: 1300px;   /* Set Width size for container  */
     margin: auto; 
 }
-/*  */
+
 body {
-    background-image: url('../img/pexels-polina-tankilevitch-4443508.png-0.25.png');
-    background-size: contain;
-   background-repeat: repeat;
-  }
+    background-image: url('../img/pexels-polina-tankilevitch-4443508.png-0.25.png');  /* Set Background Image for Homepage*/
+    background-size: contain;  
+   background-repeat: repeat;  
+}
+
+/* Settting elements for Header of Homepage */
  header{
     height: 150px;
     display: flex;
-    flex-direction:column;
+    flex-direction:column;              
     align-items: center;
     justify-content: space-between;
 }
 
 .Slogan{
-    margin: 10px auto;
-    font-size: 10px;
-    border: black;
-    border-style: solid;
-
+    margin: 10px auto;     
+    font-size: 10px;       
+    border: black;                    /* Set Border-Style as Solid */
+    border-style: solid;   
 }
 
+.Slogan:hover{
+    background-color: #FFEBF9;    /* Sets a background Colour when hovered */
+    text-decoration: underline;    
+}
+
+/*Logo will be postioned Top left corner of homepage */
 #Logo{
- position: absolute;
- top: 8px;
+ position: absolute;    
+ top: 8px;             
 left: 16px;
 }
 
-.LogoMobile{
-    position: absolute;
-     top: 8px;
-    left: 16px;
-    display: none;
-    }
+#Logo > img{
+    height:30%;      /* Setting Image size of Logo */
+    width:30%;
+}
+
     
 .mobileNavBTN{ 
     position: absolute;
     top: 8px;
-    right: 16px;
+    right: 16px;           /* Setting Mobile Button to appear Top right corner */
     margin-top:5px;
     font-size:30px; 
-    display: none; 
+    display: none;        /* Will not display Mobile button in desktop */
 }
     
     
-
-
 .IconBar{
-    list-style: none;
+    list-style: none;   
     display: flex;
-    flex-direction: row;
+    flex-direction: row;     /* Setting Icon Bar to appear Top right corner */
     position: absolute;
     top: 8px;
-   right: 16px;
-   font-size: 20px;
+    right: 16px;
+    font-size: 20px;
    
-   
-   
-    
 }
 
 .IconBar > li{
-    margin-bottom: 40px;
-    padding: 10px 20px;
-   
-    
-  
+    margin-bottom: 40px;         
+    padding: 10px 20px;    /* Seperating Icon Logo to be 10px apart */
+        
 }
+
+/*Setting a background colour for Icons  */
+/* Setting a radius of 50% so hover will appear as a circle */
+
+.SignIn:hover{
+   background-color:#FFEBF9;   
+   border-radius: 50%;          
+}
+
+.Basket:hover{
+    background-color: #FCEBB6;  
+    border-radius: 50%;  
+}         
+
+.Location:hover{
+    background-color: #D7DEDC;  
+    border-radius: 50%;           
+}
+
+.Phone:hover{
+    background-color: #A9D3FF;   
+    border-radius: 50%;            
+}
+
+
 .menu{
-    list-style: none;
-    display: flex;
+    list-style: none;                   
+    display: flex;                /* Settting a row for the menu class */
     flex-direction: row;
 }
 
 
 .menu > li{
-    margin-bottom: 40px;
-    padding: 10px 20px;
+    margin-bottom: 40px;   /*Pushing down Menu by 40px */
+    padding: 10px 20px;    
+}
+
+.menu >li:hover {
+    text-decoration: underline;  /* Text will underline when hovered */
+
 }
 h2{
-    border: black;
-    border-style: solid;
+    border: black;      /* Set Black Border around text*/
+    border-style: solid;  
+}
 
-    
+h2:hover{
+  background-color: #FCEBB6;  
+  text-decoration: underline;   
 }
+
 .SocialMediaLinks{
-    margin-bottom: 90px;
+    margin-bottom: 90px;        
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    font-size: 3px;
-}
+    display: flex;             /* Settting a row for the Social Media Links */
+    flex-direction: row;       
+    font-size: 3px; 
+}          
 
 .SocialMediaLinks > li{
-    padding: 10px 20px;
+    padding: 10px 20px;     
     margin-top: 35px;
 }
 
@@ -125,12 +158,12 @@ h2{
 
 #banner > img{
     margin-top: 60px;
-    width: 100%;
+    width: 100%;             
     margin-bottom: 30px;
 }
 
 .split5050{
-    display: flex;
+    display: flex;              /* Spliting Image and Text apart by 50% */
     flex-direction: row;
     
 }
@@ -219,26 +252,33 @@ text-align: center;
   animation-duration: 1.5s;
 }
 
+/* Fading Opacity */
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
 
+/* Fading Opacity */
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
 
 
+/* Setting Review Section */
 .Reviews{
     background: wheat;
     width:100%;
     height:400px;
     margin-top: 50px;
 }
+
+.ReviewText{
+    text-decoration: underline;
+}
 .Awards{
     position: absolute;
-    left: 30px;
+    left: 60px;
     margin-top: 80px; 
 }
 .Awards > img{
@@ -246,16 +286,16 @@ text-align: center;
     height:300px;
 }
 
-
 .ReviewList{
     list-style: none;
     position: absolute;
     flex-direction: row;
-    right: 95px;
-    margin-top: 40px;
+    right: 90px;
+    margin-top: 80px;
     font-size: 15px;
-    
+
 }
+/* Setting PreFooter Section */
 .PreFooter{
     width: 100%;
     background-color: #D7DEDC;
@@ -301,6 +341,16 @@ h5{
     font-size:15px
 }
 
+/* Setting Hovers for Menu */
+.OurProducts:hover{
+    text-decoration: underline;
+}
+.OurStory:hover{
+    text-decoration:underline;
+}
+.ContactUs:hover{
+    text-decoration: underline;
+}
 .ContactSub{
     position: absolute;
     right: 180px;
@@ -316,10 +366,23 @@ h5{
     right: 318px;
     margin-top: 100px;
     font-size:13px
-
 }
-   
-     
+
+.ContactList:hover{
+    text-decoration: underline;  
+}
+/* Setting Hovers for ContactList */
+.Twitter:hover{
+    background-color:#FFEBF9;
+}
+.Facebook:hover{
+    background-color:#FCEBB6;
+}
+.Instagram:hover{
+    background-color:#A9D3FF;
+}
+
+/* Setting Footer Section */
 footer{
     width: 100%;
     background-color:#A9D3FF;
@@ -337,7 +400,7 @@ footer > span{
 
 
 
-
+/* Setting Media Elements for 900px width */
 @media only screen and (max-width: 900px) {
 
     header{
@@ -377,6 +440,7 @@ footer > span{
 
 }
 
+/* Setting Media Elements for 600px width */
 @media only screen and (max-width: 600px) {
 
     footer > span{
@@ -397,42 +461,37 @@ footer > span{
     
  
     
-
+/* Setting Media Elements for 600px width */
 @media only screen and (max-width: 420px) {
 
     
     .container{
         width: 100%;
-        max-width: 420px;
+        max-width: 420px;     /* Set Width size for container  */
         margin: auto; 
     }
     
     .Slogan{
         font-size: 6px;
-        border: black;
+        border: black;        /* Set Border-Style has Soild */
         border-style: solid;
-       
-    
     }
     
     #Logo{
      position: absolute;
-     top: 8px;
+     top: 8px;                 /*Logo will be postioned Top left corner of homepage */
      left: 16px;
-     display: none;
     }
     
-    .LogoMobile{
-        position: absolute;
-         top: 8px;
-        left: 16px;
-        display: flex;
+    #Logo > img{
+        height:30%;            /* Setting Image size of Logo */  
+        width:30%;
     }
     
     .IconBar{
         list-style: none;
         display: none;
-        flex-direction: row;
+        flex-direction: row;    /* Icon Bar not appearing as this is a query is for mobile users */
         position: absolute;
         top: 8px;
         right: 16px;
@@ -441,7 +500,7 @@ footer > span{
     }
     h2{
         border: black;
-        border-style: solid;
+        border-style: solid;    /* Set Black Border around text*/
         font-size:10px;
         
     }
@@ -450,25 +509,28 @@ footer > span{
         position: absolute;
         top: 8px;
         right: 16px;
-        margin-top:5px;
+        margin-top:5px;        /* Setting Mobile Button to appear Top right corner */
         font-size:30px; 
         display: flex; 
     }
+    /* Creating drow-down menu for mobile button */
     .menu{
         display: block;
         position: absolute;
         top:60px;
-        height: 196px;
+        height: 202px;             
         left:0;
         width:100%;
         background-color: rgba(255,255,255,0.95)
             
     }
     
+    /* Hiding drop-down menu until it is pressed assigned in javascript*/
     .hide{
-        display: none;
+        display: hide;
     }
     
+
     .menu > li{
         text-align:center;
         border-bottom: 1px solid #ccc;
@@ -501,7 +563,8 @@ footer > span{
       margin-left: auto;
       margin-right: auto;
     }
-    
+
+     /*Setting Social Media Section */
     .SocialMedia{
         font-size:12px;
         width:100%;
@@ -549,8 +612,8 @@ footer > span{
       .mydots{
       text-align: center;
       }
-      
-    
+
+     /*Setting Reviews Section */
     .Reviews{
         background: wheat;
         width:100%;
@@ -568,28 +631,28 @@ footer > span{
         
     }
     .Awards{
-        right: 25px;
+        right: 100px;
         text-align: center;
     }
     
     .Awards > img{
         margin-top: -50px;
-        width:350px;
-        height:180px;
+        width:300px;
+        height:150px;
     }
         
     .ReviewList{
         font-size: 10px;
         margin-left: 100px;
         margin-right: auto;
-        margin-top: 220px;
+        margin-top: 180px;
     }
     
-    
+    /*Setting PreFooter Section */
     .PreFooter{
         width: 100%;
         background-color: #D7DEDC;
-        height: 260px;
+        height: 300px;
         margin-top: 0px;
         display: flex;
         flex-direction: column;
@@ -658,7 +721,7 @@ footer > span{
         flex-direction: column;
         position: absolute;
         right: 165px;
-        margin-top:160px;
+        margin-top:170px;
         font-size:8px;
         text-align: justify;
     }
@@ -689,6 +752,7 @@ footer > span{
         text-align: center;
        
     }
+    /*Setting Footer Section font size */
     footer > span{
             font-size: 10px;
     }
