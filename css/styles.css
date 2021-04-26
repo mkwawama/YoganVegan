@@ -277,11 +277,11 @@ text-align: center;
 
 .ReviewText{
     text-decoration: underline;
+    text-align:center;
 }
 .Awards{
-    position: absolute;
-    left: 60px;
-    margin-top: 80px; 
+    float:left;
+    margin-top: 10px; 
 }
 .Awards > img{
     width:450px;
@@ -290,10 +290,7 @@ text-align: center;
 
 .ReviewList{
     list-style: none;
-    position: absolute;
-    flex-direction: row;
-    right: 90px;
-    margin-top: 80px;
+    margin-top: 10px;
     font-size: 15px;
 
 }
@@ -529,7 +526,7 @@ footer > span{
     
     /* Hiding drop-down menu until it is pressed assigned in javascript*/
     .hide{
-        display:none;
+        display: none;
     }
     
 
@@ -628,26 +625,25 @@ footer > span{
     .ReviewText{
         font-size:8px;
         text-decoration: underline;
+        padding: 10px;
     }
         
         
     }
     .Awards{
-        right: 100px;
+        float: none;
         text-align: center;
     }
     
     .Awards > img{
-        margin-top: -50px;
+        margin-top: 20px;
         width:300px;
         height:150px;
     }
         
     .ReviewList{
         font-size: 10px;
-        margin-left: 100px;
-        margin-right: auto;
-        margin-top: 180px;
+        margin-top: 10px;
     }
     
     /*Setting PreFooter Section */
