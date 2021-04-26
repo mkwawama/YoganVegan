@@ -31,8 +31,9 @@ body {
 .Slogan{
     margin: 10px auto;     
     font-size: 10px;       
-    border: black;                    /* Set Border-Style as Solid */
-    border-style: solid;   
+    border: black;                   /* Set Border-Style as Solid */
+    border-style: solid;
+    padding: 5px;   
 }
 
 .Slogan:hover{
@@ -48,8 +49,8 @@ left: 16px;
 }
 
 #Logo > img{
-    height:30%;      /* Setting Image size of Logo */
-    width:30%;
+             /* Setting Image size of Logo */
+    width:60%;
 }
 
     
@@ -123,6 +124,7 @@ left: 16px;
 h2{
     border: black;      /* Set Black Border around text*/
     border-style: solid;  
+    padding:5px;
 }
 
 h2:hover{
@@ -527,7 +529,7 @@ footer > span{
     
     /* Hiding drop-down menu until it is pressed assigned in javascript*/
     .hide{
-        display: hide;
+        display:none;
     }
     
 
